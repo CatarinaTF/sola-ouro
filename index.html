@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sola de Ouro</title>
-    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.png">
+    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.webp">
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -22,6 +22,8 @@
 
     <link rel="stylesheet" href="css/style_sola_ouro/style.css">
     <link rel="stylesheet" href="css/style_sola_ouro/style_menu.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/style_slider.css">
+
 
 
 </head>
@@ -40,11 +42,14 @@
             <div class="row navegacao">
 
                 <!--nav logo-->
-                <div class="col-lg-2 col-sm-2 col-xs-2 logonav">
+                <div class="col-lg-2 col-sm-2 col-xs-2">
                     <a href="index.html" target="_self">
-                        <img src="img/logos/logo completo/logo_sola_ouro_completo_castanho.svg" alt="logo Sola de ouro">
+                        <div class="logonav"></div>
                     </a>
                 </div>
+
+              
+            
 
                 <!--como é que espeficifo que no mobile a imagem do logo muda? é nas media querys?-->
 
@@ -104,6 +109,23 @@
                         <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
                         <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
                         <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
+                        <li>
+                            <div class="menu__item barrapesquisa-menu">
+                                <input type="text" class="form-control" style="display: inline-block;" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu__item dropdown">
+                                <button class="btn dropdown-toggle seletoridioma-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Idioma
+                                <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu seletoridioma-dropdown-menu">
+                                    <li><a href="#">PT</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -132,8 +154,8 @@
 
                         </div>
 
-                        <div class="col-lg-6">
-                            <img src="img/home_page/home_page_sapatos_header-03.png" alt="">
+                        <div class="col-lg-6 sapatosimagem">
+                            <img src="img/home_page/home_page_sapatos_header-03.webp" alt="">
                         </div>
 
                     </div>
@@ -156,13 +178,13 @@
 
                 <!--titulo: evoluimos consigo-->
 
-                <div class="col-lg-12 col-xs-12">
+                <div class="col-lg-12 col-xs-12 cartaotitulo">
                     <h3 class="h3titulo">Evoluímos consigo</h3>
                 </div>
 
                 <!--cartões-->
 
-                <div class="col-lg-4 col-xs-12 cartao">
+                <div class="col-lg-4 col-sm-4 col-xs-12 cartao">
                     <p class="ptitulo missao">
                         Missão
                     </p>
@@ -176,7 +198,7 @@
                     </p>
                 </div>
 
-                <div class="col-lg-4 col-xs-12 cartao">
+                <div class="col-lg-4 col-sm-4 col-xs-12 cartao">
                     <p class="ptitulo visao">
                         Visão
                     </p>
@@ -188,7 +210,7 @@
                     </p>
                 </div>
 
-                <div class="col-lg-4 col-xs-12 cartao">
+                <div class="col-lg-4 col-sm-4 col-xs-12 cartao">
                     <p class="ptitulo valores">
                         Valores
                     </p>
@@ -208,13 +230,13 @@
 
         <div class="container nossaequipa">
             <div class="row">
-                <div class="col-lg-6 col-xs-12">
+                <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="imgequipa">
-                        <img src="img/home_page/equipa_homepage_equipa.png" alt="a nossa equipa">
+                        <img src="img/home_page/equipa_homepage_equipa.webp" alt="a nossa equipa">
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-xs-12 textoequipa">
+                <div class="col-lg-6 col-sm-6 col-xs-12 textoequipa">
 
                     <h3 class="h3titulo">A nossa equipa</h3>
 
@@ -253,7 +275,7 @@
 
             <div class="container ctavideo">
                 <div class="row">
-                    <div class="col-lg-6 col-xs-12 maintexto">
+                    <div class="col-lg-6 col-sm-12 col-xs-12 maintexto">
                         <h2 class="h2destaque">Conheça o nosso<br>
                             processo de fabrico</h2>
 
@@ -262,10 +284,10 @@
                     </div>
 
 
-                    <div class="col-lg-6 col-xs-12 mainvideo">
+                    <div class="col-lg-6 col-sm-12 col-xs-12 mainvideo">
 
                         
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
                         
 
                     </div>
@@ -280,38 +302,90 @@
         <!--main nossos clientes-->
 
         <div class="container-fluid clientesverde">
+            <div class="col-lg-12">
+                <h3 class="h3titulo titulobranco">Alguns dos nossos clientes</h3>
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h3 class="h3titulo titulobraco ">Alguns dos nossos clientes</h3>
+                    <div class="col-lg-3 clientelogo">
+                        <img src="img/home_page/logos/zara_logo_editado.webp" alt="Zara">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/zara_logo_editado.png" alt="Zara">
+                        <img src="img/home_page/logos/cortefiel_logo.webp" alt="Cortefiel">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/cortefiel_logo.png" alt="Cortefiel">
+                        <img src="img/home_page/logos/guess_logo_editado.webp" alt="Guess">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/guess_logo_editado.png" alt="Guess">
+                        <img src="img/home_page/logos/mango_logo_editado.webp" alt="Mango">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/mango_logo_editado.png" alt="Mango">
+                        <img src="img/home_page/logos/lacos2_logo_editado.webp" alt="Lacoste">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/lacos2_logo_editado.png" alt="Lacoste">
+                        <img src="img/home_page/logos/massimodutti2_logo_editado.webp" alt="MassimoDutti">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/massimodutti2_logo_editado.png" alt="MassimoDutti">
+                        <img src="img/home_page/logos/desigal_logo_editado.webp" alt="Desigual">
                     </div>
                     <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/desigal_logo_editado.png" alt="Desigual">
-                    </div>
-                    <div class="col-lg-3 clientelogo">
-                        <img src="img/home_page/logos/gant_logo_editado.png" alt="Gant">
+                        <img src="img/home_page/logos/gant_logo_editado.webp" alt="Gant">
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="img/home_page/logos/zara_logo_editado.webp" alt="Zara">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/cortefiel_logo.webp" alt="Cortefiel">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/guess_logo_editado.webp" alt="Guess">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/mango_logo_editado.webp" alt="Mango">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/lacos2_logo_editado.webp" alt="Lacoste">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/massimodutti2_logo_editado.webp" alt="MassimoDutti">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/desigal_logo_editado.webp" alt="Desigual">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/gant_logo_editado.webp" alt="Gant">
+                    </div>     
+                    <div class="slide">
+                        <img src="img/home_page/logos/zara_logo_editado.webp" alt="Zara">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/cortefiel_logo.webp" alt="Cortefiel">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/guess_logo_editado.webp" alt="Guess">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/mango_logo_editado.webp" alt="Mango">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/lacos2_logo_editado.webp" alt="Lacoste">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/massimodutti2_logo_editado.webp" alt="MassimoDutti">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/desigal_logo_editado.webp" alt="Desigual">
+                    </div>
+                    <div class="slide">
+                        <img src="img/home_page/logos/gant_logo_editado.webp" alt="Gant">
+                    </div>            
+
+                </div>
+            </div>
 
 
 
@@ -322,7 +396,7 @@
         <div class="container-fluid fundofooter">
             <div class="container footerconteudo">
                 <div class="row">
-                    <div class="col-lg-6 listadecontactos">
+                    <div class="col-lg-6 col-sm-12 col-xs-12 listadecontactos">
                         <ul class="contactos">
                             <li class="footertelefone pfooter">
                                 <a href="callto:+351 256 866 034">+351 256 866 034</a>
@@ -338,17 +412,17 @@
                         </ul>
                     </div> 
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-sm-12 col-xs-12 ">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <img src="img/footer/Norte-2020.png" alt="norte2020">
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <img src="img/footer/Norte-2020.webp" alt="norte2020">
                             </div>
-                            <div class="col-lg-2">
-                                <img src="img/footer/pme_execlencia_logo_editado.png" alt="pme">
+                            <div class="col-lg-2 col-sm-2 col-xs-2">
+                                <img src="img/footer/pme_execlencia_logo_editado.webp" alt="pme">
                             </div>
 
-                            <div class="col-lg-2">
-                                <img src="img/footer/pme_logo_editado.png" alt="pme">
+                            <div class="col-lg-2 col-lg-2 col-sm-2 col-xs-2">
+                                <img src="img/footer/pme_logo_editado.webp" alt="pme">
                             </div>
                         </div>
                     </div>

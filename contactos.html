@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
-    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.png">
+    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.webp">
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -20,7 +20,7 @@
 
 <body class="bodycontactos">
 
-    <header class="headercontactos">
+    <header class="headerbackground">
 
         <!--nav bar-->
 
@@ -29,9 +29,10 @@
             <div class="row navegacao">
 
                 <!--nav logo-->
-                <div class="col-lg-2 col-sm-2 col-xs-2 logonav">
+                <div class="col-lg-2 col-sm-2 col-xs-2 ">
                     <a href="index.html" target="_self">
-                        <img src="img/logos/logo completo/logo_sola_ouro_completo_castanho.svg" alt="logo Sola de ouro">
+                                                <div class="logonav"></div>
+
                     </a>
                 </div>
 
@@ -62,7 +63,8 @@
 
 
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Idioma
                         <span class="caret"></span>
                     </button>
@@ -70,13 +72,14 @@
                         <li><a href="#">PT</a></li>
                         <li><a href="#">EN</a></li>
                     </ul>
-                    </div>
+                </div>
 
-                    <!--nav barra de pesquisa-->
+                <!--nav barra de pesquisa-->
 
-                
+
                 <div class="barrapesquisa">
-                    <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                    <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img
+                            src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
                 </div>
 
                 <!--nav hamburger-->
@@ -86,13 +89,30 @@
                     <label class="menu__btn" for="menu__toggle">
                         <span></span>
                     </label>
-                
+
                     <ul class="menu__box">
                         <li><a class="menu__item" href="sobre_nos.html" target="_self">Sobre nós</a></li>
                         <li><a class="menu__item" href="servicos.html" target="_self">Serviços</a></li>
                         <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
                         <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
                         <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
+                        <li>
+                            <div class="menu__item barrapesquisa-menu">
+                                <input type="text" class="form-control" style="display: inline-block;" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu__item dropdown">
+                                <button class="btn dropdown-toggle seletoridioma-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Idioma
+                                <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu seletoridioma-dropdown-menu">
+                                    <li><a href="#">PT</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -220,13 +240,41 @@
                         </ul>
                     </div>
 
-                    <div class="col-lg-6">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12 col-xs-12 mapalocalizacao">
+                    <div class="col-lg-6 col-sm-12 col-xs-12 mapalocalizacao">
 
-                            </div>
-                        </div>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6771.378418380602!2d-8.442719655163303!3d40.88709637608792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2378d5c394bf33%3A0x7bab3a8d145e0dfe!2sSOLA%20DE%20OURO!5e0!3m2!1spt-PT!2spt!4v1679564772851!5m2!1spt-PT!2spt"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
                     </div>
+
+                    <div class="contactoslogosfooter">
+
+                        <div class="col-lg-6 col-sm-12 col-xs-12 vazio"></div>
+                        
+                        <div class="col-lg-4 col-sm-12 col-xs-12">
+                            <img src="img/footer/Norte-2020.webp" alt="norte 2020">
+                        </div>
+
+
+                        <div class="col-lg-1 col-sm-2 col-xs-2">
+                            <img src="img/footer/pme_execlencia_logo_editado.webp" alt="pme lider">
+                        </div>
+
+
+
+                        <div class="col-lg-1 col-sm-2 col-xs-2">
+                            <img src="img/footer/pme_logo_editado.webp" alt="pme lider">
+                        </div>
+
+                    </div>
+
+
+
 
                 </div>
             </div>

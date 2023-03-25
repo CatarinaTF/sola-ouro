@@ -1,0 +1,202 @@
+/*carousel produtos*/
+
+.radio {
+    display: none;
+}
+
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  .cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+
+.produtoimg{
+    background-color: #cccccc;
+    height: 55vh;
+    width: 60vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#produto-1 {
+  background-image: url(../../img/produtos/crepe_editado.webp);
+}
+#produto-2 {
+  background-image: url(../../img/produtos/micro_editado.webp); 
+}
+#produto-3 {
+  background-image: url(../../img/produtos/neolite-2_editado.webp); 
+}
+#produto-4 {
+  background-image: url(../../img/produtos/evaPrincipal_editado.webp); 
+}
+#produto-5 {
+  background-image: url(../../img/produtos/tpu-1_editado.webp); 
+}
+
+.cardinfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.cardinfo > * {
+    display: block;
+}
+
+.cardinfo > label {
+    color: #EFEEEE;
+}
+
+.carddescr {
+    position: absolute;
+    vertical-align: text-bottom;
+    bottom: -50px;
+    margin: 10% 10% 0% 10%;
+    text-align: center;
+    color: #255E5A;
+}
+
+.montra{
+    height: 70vh;
+    padding-top: 5%;
+    margin-bottom: 100px;
+}
+
+  #item-1:checked ~ .cards #produto-1,
+  #item-2:checked ~ .cards #produto-2,
+  #item-3:checked ~ .cards #produto-3,
+  #item-4:checked ~ .cards #produto-4,
+  #item-5:checked ~ .cards #produto-5 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
+  }
+  
+  #item-1:checked ~ .cards #produto-2,
+  #item-2:checked ~ .cards #produto-3,
+  #item-3:checked ~ .cards #produto-4,
+  #item-4:checked ~ .cards #produto-5,
+  #item-5:checked ~ .cards #produto-1 {
+    transform: translatex(20%) scale(0.8);
+    opacity: 0.4;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
+
+  }
+  
+
+  #item-1:checked ~ .cards #produto-3,
+  #item-2:checked ~ .cards #produto-4,
+  #item-3:checked ~ .cards #produto-5,
+  #item-4:checked ~ .cards #produto-1,
+  #item-5:checked ~ .cards #produto-2 {
+    transform: translatex(-20%) scale(0.8);
+    opacity: 0.4;
+    z-index: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
+
+  }
+
+  #item-1:checked ~ .cards #produto-4,
+  #item-2:checked ~ .cards #produto-5,
+  #item-3:checked ~ .cards #produto-1,
+  #item-4:checked ~ .cards #produto-2,
+  #item-5:checked ~ .cards #produto-3 {
+    transform: translatex(-40%) scale(0.6);
+    opacity: 0.2;
+    z-index: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
+    
+  }
+  
+  #item-1:checked ~ .cards #produto-5,
+  #item-2:checked ~ .cards #produto-1,
+  #item-3:checked ~ .cards #produto-2,
+  #item-4:checked ~ .cards #produto-3,
+  #item-5:checked ~ .cards #produto-4 {
+    transform: translatex(40%) scale(0.6);
+    opacity: 0.2;
+    z-index: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
+
+  }
+
+  /* Esconder objectos que não estão à frente */
+  
+  #item-1:checked ~ .cards #produto-2 > *,
+  #item-2:checked ~ .cards #produto-3 > *,
+  #item-3:checked ~ .cards #produto-4 > *,
+  #item-4:checked ~ .cards #produto-5 > *,
+  #item-5:checked ~ .cards #produto-1 > * {
+    visibility: hidden;
+  }
+  
+
+  #item-1:checked ~ .cards #produto-3 > *,
+  #item-2:checked ~ .cards #produto-4 > *,
+  #item-3:checked ~ .cards #produto-5 > *,
+  #item-4:checked ~ .cards #produto-1 > *,
+  #item-5:checked ~ .cards #produto-2 > * {
+    visibility: hidden;
+  }
+
+  #item-1:checked ~ .cards #produto-4 > *,
+  #item-2:checked ~ .cards #produto-5 > *,
+  #item-3:checked ~ .cards #produto-1 > *,
+  #item-4:checked ~ .cards #produto-2 > *,
+  #item-5:checked ~ .cards #produto-3 > * {
+    visibility: hidden;    
+  }
+  
+  #item-1:checked ~ .cards #produto-5 > *,
+  #item-2:checked ~ .cards #produto-1 > *,
+  #item-3:checked ~ .cards #produto-2 > *,
+  #item-4:checked ~ .cards #produto-3 > *,
+  #item-5:checked ~ .cards #produto-4 > * {
+    visibility: hidden;
+  }
+
+
+
+  /*Produtos botões*/
+
+.btnprodutobranco {
+  background: #EFEEEE;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+}
+
+
+.btnprodutobranco a {
+  color: #255E5A;
+  text-decoration: none;
+}
+
+
+.btnprodutobranco:hover a{
+  color: #BC8757;
+  transition: 0.2s;
+}
+
+

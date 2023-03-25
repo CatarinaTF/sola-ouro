@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sola de Ouro</title>
-    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.png">
+    <title>Produtos</title>
+    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.webp">
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="css/style_sola_ouro/style.css">
     <link rel="stylesheet" href="css/style_sola_ouro/style_menu.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/style_produtos.css">
 
 
 </head>
@@ -37,9 +38,9 @@
             <div class="row navegacao">
 
                 <!--nav logo-->
-                <div class="col-lg-2 col-sm-2 col-xs-2 logonav">
+                <div class="col-lg-2 col-sm-2 col-xs-2 ">
                     <a href="index.html" target="_self">
-                        <img src="img/logos/logo completo/logo_sola_ouro_completo_castanho.svg" alt="logo Sola de ouro">
+                                                <div class="logonav"></div>
                     </a>
                 </div>
 
@@ -70,7 +71,7 @@
 
 
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <button class="btn dropdown-toggle seletoridioma-lite" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                      Idioma
                       <span class="caret"></span>
                     </button>
@@ -83,7 +84,7 @@
                   <!--nav barra de pesquisa-->
 
                 
-                <div class="barrapesquisa">
+                <div class="barrapesquisa barrapesquisa-lite">
                     <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
                 </div>
 
@@ -101,6 +102,23 @@
                         <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
                         <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
                         <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
+                        <li>
+                            <div class="menu__item barrapesquisa-menu">
+                                <input type="text" class="form-control" style="display: inline-block;" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu__item dropdown">
+                                <button class="btn dropdown-toggle seletoridioma-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Idioma
+                                <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu seletoridioma-dropdown-menu">
+                                    <li><a href="#">PT</a></li>
+                                    <li><a href="#">EN</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
 
@@ -126,35 +144,35 @@
                     <label class="card produtoimg" for="item-1" id="produto-1">                        
                         <div class="cardinfo"> 
                             <label class="h3 h3titulo">Solas em CREPE</label>
-                            <button class="btnprodutobranco"><a href="produtos_crepe.html" target="_blank">Veja em detalhe</a></button>
+                            <button class="btnprodutobranco" onclick="window.location.href='produtos_crepe.html';"><a href="produtos_crepe.html" target="_blank">Veja em detalhe</a></button>
                         </div>
                         <label class="carddescr">Ecológico - Reciclável - Flexível - À prova de água</label>
                     </label>
                     <label class="card produtoimg" for="item-2" id="produto-2">                        
                         <div class="cardinfo"> 
                             <label class="h3 h3titulo">Solas em MICRO</label>
-                            <button class="btnprodutobranco"><a href="produtos_micro.html" target="_blank">Veja em detalhe</a></button>
+                            <button class="btnprodutobranco" onclick="window.location.href='produtos_micro.html';"><a href="produtos_micro.html" target="_blank">Veja em detalhe</a></button>
                         </div>
                         <label class="carddescr">Da família dos E.V.A., o Micro torna as solas pré-fabricadas leves e confortáveis.</label>
                     </label>
                     <label class="card produtoimg" for="item-3" id="produto-3">                        
                         <div class="cardinfo"> 
                             <label class="h3 h3titulo">Solas em NEOLITE</label>
-                            <button class="btnprodutobranco"><a href="produtos_neolite.html" target="_blank">Veja em detalhe</a></button>
+                            <button class="btnprodutobranco" onclick="window.location.href='produtos_neolite.html';"><a href="produtos_neolite.html" target="_blank">Veja em detalhe</a></button>
                         </div>
                         <label class="carddescr">O neolite é usado como alternativa ao couro. Este material é de origem artificial e pode ter várias cores e espessuras.</label>
                     </label>
                     <label class="card produtoimg" for="item-4" id="produto-4">                        
                         <div class="cardinfo"> 
                             <label class="h3 h3titulo">Solas em E.V.A</label>
-                            <button class="btnprodutobranco"><a href="produtos_eva.html" target="_blank">Veja em detalhe</a></button>
+                            <button class="btnprodutobranco" onclick="window.location.href='produtos_eva.html';"><a href="produtos_eva.html" target="_blank">Veja em detalhe</a></button>
                         </div>
                         <label class="carddescr">Da família dos copolímero termoplásticos, o E.V.A é uma espuma sintética conhecida pela sua leveza e conforto.</label>
                     </label>
                     <label class="card produtoimg" for="item-5" id="produto-5">                        
                         <div class="cardinfo"> 
                             <label class="h3 h3titulo">Solas em TR e TPU</label>
-                            <button class="btnprodutobranco"><a href="produtos_TRTPU.html" target="_blank">Veja em detalhe</a></button>
+                            <button class="btnprodutobranco" onclick="window.location.href='produtos_TRTPU.html';"><a href="produtos_TRTPU.html" target="_blank">Veja em detalhe</a></button>
                         </div>
                         <label class="carddescr">Da família dos poliuretanos termoplásticos, o TR e o TPU são conhecidos pela sua elasticidade e resistência.</label>
                     </label>
@@ -165,7 +183,7 @@
     </main>
 
     <footer>
-        <div class="container-fluid fundofooter">
+        <div class="container-fluid footeronda">
             <div class="container footerconteudo">
                 <div class="row">
                     <div class="col-lg-6 listadecontactos">
@@ -187,14 +205,14 @@
                     <div class="col-lg-6">
                         <div class="row">
                             <div class="col-lg-6">
-                                <img src="img/footer/Norte-2020.png" alt="norte2020">
+                                <img src="img/footer/Norte-2020.webp" alt="norte2020">
                             </div>
                             <div class="col-lg-2">
-                                <img src="img/footer/pme_execlencia_logo_editado.png" alt="pme">
+                                <img src="img/footer/pme_execlencia_logo_editado.webp" alt="pme">
                             </div>
 
                             <div class="col-lg-2">
-                                <img src="img/footer/pme_logo_editado.png" alt="pme">
+                                <img src="img/footer/pme_logo_editado.webp" alt="pme">
                             </div>
                         </div>
                     </div>

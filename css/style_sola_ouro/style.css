@@ -1,4 +1,3 @@
-
 /* ****NOTAS****
 
 CORES USADAS (hex codes)
@@ -34,15 +33,43 @@ font-weight:
 800
 
 
+
+usar ctrl+F para encontrar as seguintes secções neste documento
+
+GERAL
+-header geral
+-header navbar
+-header navbar-transição-"animação"
+-botão verde - geral (para todod o site)
+-texto- geral (para todo o site)
+-footer homepage e geral
+
+HOMEPAGE
+-header homepage - mensagem de abertura
+-main homepage - evoluimos consigo
+-main homepage - nossa equipa
+-main homepage CTA+video
+
+
+CONTACTOS
+-pagina contactos
+-formulário contactos
+-footer contactos
+
+PAGINA DE PRODUTO EXEMPLO SOLA CREPE
+-pagina de um produto - exemplo sola em crepe
+-footer para pagina de produtos geral e produto detalhe
+
 */
 
 
 
-*{
+* {
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
     margin: 0px;
     padding: 0px;
     background-color: #f2efeb;
@@ -53,83 +80,92 @@ footer {
     margin-top: auto;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
 
 
 /*header geral*/
- 
-.headerhomepage{
+
+.headerhomepage {
     width: 100%;
     height: 100vh;
-    background-image: url(../../img/fundo_onda-01.png);
+    background-image: url(../../img/fundo_onda-01.webp);
     background-size: cover;
     background-position: center;
     background-size: 100% 100vh;
     position: relative;
 }
 
-header{
-    background-image: url(../../img/fundo_onda-01.png);
+
+.headerbackground {
+
+    background-image: url(../../img/fundo_onda-01.webp);
     background-size: cover;
     background-position: bottom;
+    background-color: #E2DAD6;
     position: relative;
-    height: 20vh;
+    height: 10vh;
 }
 
-            /*header navbar*/
+/*header navbar*/
 
-.navegacao{
+.navegacao {
     display: flex;
     justify-items: center;
     justify-content: space-between;
     padding-top: 20px;
     cursor: pointer;
-    
+
 }
 
-.linksnavegacao{
+.linksnavegacao {
     z-index: 1;
 }
 
 
-.linksmenu li{
+.linksmenu li {
     list-style: none;
     display: inline-block;
     padding: 10px 25px;
 }
 
-.linksmenu li a{
+.linksmenu li a {
     color: #255E5A;
     text-decoration: none;
     font-size: 16px;
-    
+
 }
 
-         /*header navbar-transição*/
+/*header navbar-transição-"animação"*/
 
-.linha{
+.linha {
     position: relative;
 }
 
-.linha::after{
+.linha::after {
     content: '';
     background-color: #85B4AE;
     height: 2px;
@@ -142,7 +178,7 @@ header{
     transition: tranform ease-in-out;
 }
 
-.linha:hover::after{
+.linha:hover::after {
     transform: scaleX(1);
     transition: .2s;
 }
@@ -150,9 +186,9 @@ header{
 
 
 
-.seletoridioma{
+.seletoridioma {
     background-color: #f2efeb;
-    color: #255E5A;   
+    color: #255E5A;
     height: 40px;
     width: 100px;
     border-radius: 30px;
@@ -160,19 +196,29 @@ header{
     z-index: 1;
 }
 
-.dropdown-menu{
+.seletoridioma-lite {
+    background-color: #ffffff;
+    color: #255E5A;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    z-index: 1;
+}
+
+.dropdown-menu {
     border: none;
     background-color: #f2efeb;
-    
+
 }
 
-.dropdown-menu li a{
-    color:#255E5A;
-    
+.dropdown-menu li a {
+    color: #255E5A;
+
 }
 
 
-.barrapesquisa{
+.barrapesquisa {
     height: 40px;
     display: flex;
     cursor: pointer;
@@ -182,28 +228,30 @@ header{
     border: transparent;
     align-items: center;
     z-index: 2;
-    
+}
 
+.barrapesquisa-lite {
+    background-color: #fdfdfc;
 }
 
 
 
-.barrapesquisa:hover input{
+.barrapesquisa:hover input {
     width: 100px;
 }
 
-.barrapesquisa input{
+.barrapesquisa input {
     width: 0;
     outline: none;
     border: none;
     font-weight: 300;
-    font-size:16px; 
+    font-size: 16px;
     transition: 0.8s;
     background: transparent;
-    
+
 }
 
-.barrapesquisa a img{
+.barrapesquisa a img {
     width: 20px;
     height: 20px;
 }
@@ -212,26 +260,26 @@ header{
 
 
 
-    /*_______________botão verde - geral (para todod o site)______________*/
-.btnverde{
+/*_______________botão verde - geral (para todod o site)______________*/
+.btnverde {
     background: #255E5A;
     font-weight: 700;
-    border-radius:30px;
+    border-radius: 30px;
     border: none;
     padding: 10px 25px;
 }
 
-.btnverde a{
+.btnverde a {
     color: #EFEEEE;
     text-decoration: none;
 }
 
-.btnverde:hover{
-    background-color:#e2dad600;
+.btnverde:hover {
+    background-color: #e2dad600;
     border: #255E5A solid 2px;
 }
 
-.btnverde:hover a{
+.btnverde:hover a {
     color: #255E5A;
     transition: 0.5s;
 }
@@ -239,73 +287,78 @@ header{
 
 
 
-    /*header - mensagem de abertura*/
+/*header homepage - mensagem de abertura*/
 
-.heroinicio{
+.heroinicio {
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
-.herotext h1{
+.herotext h1 {
     font-weight: 700;
     font-size: 48px;
     color: #BC8757;
 }
 
-.herotext p{
+.herotext p {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #255E5A;
     font-weight: 300;
     font-size: 18px;
+    padding-left: 0;
 }
 
 
 /*_______________texto- geral (para todo o site)______________*/
-.h3titulo{
+.h3titulo {
     color: #255E5A;
     font-weight: 700;
     font-size: 36px;
     padding-bottom: 5%;
 }
 
-.ptitulo{
+.ptitulo {
     color: #545454;
     font-size: 18px;
     font-weight: 700;
     padding-bottom: 10px;
 }
 
-.ptexto{
+.ptexto {
     color: #545454;
     font-size: 18px;
 }
 
-.destaquetexto{
+.destaquetexto {
     font-weight: 700;
 }
 
-.cartao{
-    
+.cartaotitulo {
+    padding-left: 30px;
+}
+
+.cartao {
+    padding-left: 30px;
     padding-bottom: 50px;
 }
 
-.cartao:nth-child(3){
+.cartao:nth-child(3) {
     padding-left: 50px;
 }
 
 
-.cartao:last-child{
+.cartao:last-child {
     padding-left: 100px;
 }
 
 
-/*main - evoluimos consigo*/
+/*main homepage - evoluimos consigo*/
 
 
 
 
-.missao::before{
+.missao::before {
     content: url(../../img/icons/homepage_missao_verde-01.svg);
     display: inline-block;
     width: 30px;
@@ -314,7 +367,7 @@ header{
 
 }
 
-.visao::before{
+.visao::before {
     content: url(../../img/icons/homepage_visao_vermelho-01.svg);
     display: inline-block;
     width: 30px;
@@ -323,7 +376,7 @@ header{
 
 }
 
-.valores::before{
+.valores::before {
     content: url(../../img/icons/home_page_valores_amarelo.svg);
     display: inline-block;
     width: 30px;
@@ -332,41 +385,43 @@ header{
 }
 
 
-/*main - nossa equipa*/
+/*main homepage - nossa equipa*/
 
 
-.nossaequipa{
+.nossaequipa {
     height: 70vh;
     padding-top: 5%;
     margin-bottom: 100px;
 }
 
 
-.imgequipa{
+.imgequipa {
     width: 80%;
     height: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 
-.textoequipa .destaquetexto{
+.textoequipa .destaquetexto {
     color: #255E5A;
 }
 
-.phomepage{
-   padding-bottom: 10%;
+.phomepage {
+    padding-bottom: 10%;
 }
 
 
 
-/*main CTA+video*/
+/*main homepage CTA+video*/
 
 
-.mainimagemfundo{
-    
+.mainimagemfundo {
+
     width: 100%;
     height: 100vh;
-    background-image: url(../../img/fundo_onda_topo-02.png);
+    background-image: url(../../img/fundo_onda_topo-02.webp);
     background-size: cover;
     background-position: center;
     background-size: 100% 100vh;
@@ -376,50 +431,61 @@ header{
 
 
 
-.maintexto{
+.maintexto {
     transform: translateY(300px);
 }
 
-.h2destaque{
+.h2destaque {
     font-weight: 700;
     font-size: 36px;
     color: #255E5A;
-    padding-bottom:5%; 
+    padding-bottom: 5%;
 }
 
-.mainvideo{
-    
-    
+.mainvideo {
+
+
     height: 50vh;
     transform: translateY(200px);
-    
+
 }
 
-#frame{
+.mainvideo iframe {
+    border-radius: 20px;
+    width: 100%;
+    height: 315px;
+}
+
+#frame {
     height: 50vh;
     transform: translateY(200px);
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
-.clientesverde{
+.clientesverde {
     background-color: #255E5A;
     height: 40%;
     border-radius: 5% 5% 0 0;
     padding-bottom: 50px;
+    margin-top: -5%;
+    padding-top: 5%;
 }
 
-.h3titulo.titulobraco{
+.h3titulo.titulobranco {
     color: #EFEEEE;
     text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
-.clientelogo{
+.clientelogo {
     padding: 50px;
 }
 
-.fundofooter{
+
+/* footer homepage e geral*/
+
+.fundofooter {
     background-color: #85B4AE;
     height: 30%;
     padding-top: 50px;
@@ -427,19 +493,19 @@ header{
 
 }
 
-.pfooter{
+.pfooter {
     color: #EFEEEE;
     list-style: none;
     padding-top: 15px;
     padding-bottom: 15px;
 }
 
-.pfooter a{
+.pfooter a {
     color: #EFEEEE;
     text-decoration: none;
 }
 
-.footertelefone::before{
+.footertelefone::before {
     content: url(../../img/icons/footer_telefone.svg);
     display: inline-block;
     width: 20px;
@@ -447,7 +513,7 @@ header{
     margin-right: 5px;
 }
 
-.footermail::before{
+.footermail::before {
     content: url(../../img/icons/footer_email.svg);
     display: inline-block;
     width: 20px;
@@ -455,7 +521,7 @@ header{
     margin-right: 5px;
 }
 
-.footermorada::before{
+.footermorada::before {
     content: url(../../img/icons/footer_morada.svg);
     display: inline-block;
     width: 20px;
@@ -468,191 +534,24 @@ header{
 
 
 
-/*carousel produtos*/
+/*____________________pagina contactos______________*/
 
-.radio {
-    display: none;
-}
-
-.card {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
-    cursor: pointer;
-    border-radius: 20px;
-  }
-
-  .cards {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 20px;
-  }
-
-  #item-1:checked ~ .cards #produto-1,
-  #item-2:checked ~ .cards #produto-2,
-  #item-3:checked ~ .cards #produto-3,
-  #item-4:checked ~ .cards #produto-4,
-  #item-5:checked ~ .cards #produto-5 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 2;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
-  }
-  
-  #item-1:checked ~ .cards #produto-2,
-  #item-2:checked ~ .cards #produto-3,
-  #item-3:checked ~ .cards #produto-4,
-  #item-4:checked ~ .cards #produto-5,
-  #item-5:checked ~ .cards #produto-1 {
-    transform: translatex(20%) scale(0.8);
-    opacity: 0.4;
-    z-index: 1;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
-
-  }
-  
-
-  #item-1:checked ~ .cards #produto-3,
-  #item-2:checked ~ .cards #produto-4,
-  #item-3:checked ~ .cards #produto-5,
-  #item-4:checked ~ .cards #produto-1,
-  #item-5:checked ~ .cards #produto-2 {
-    transform: translatex(-20%) scale(0.8);
-    opacity: 0.4;
-    z-index: 1;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
-
-  }
-
-  #item-1:checked ~ .cards #produto-4,
-  #item-2:checked ~ .cards #produto-5,
-  #item-3:checked ~ .cards #produto-1,
-  #item-4:checked ~ .cards #produto-2,
-  #item-5:checked ~ .cards #produto-3 {
-    transform: translatex(-40%) scale(0.6);
-    opacity: 0.2;
-    z-index: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
-
-  }
-  
-  #item-1:checked ~ .cards #produto-5,
-  #item-2:checked ~ .cards #produto-1,
-  #item-3:checked ~ .cards #produto-2,
-  #item-4:checked ~ .cards #produto-3,
-  #item-5:checked ~ .cards #produto-4 {
-    transform: translatex(40%) scale(0.6);
-    opacity: 0.2;
-    z-index: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, z-index 0.1s linear;
-
-  }
-
-.produtoimg{
-    background-color: #cccccc;
-    height: 55vh;
-    width: 60vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-
-#produto-1 {
-  background-image: url(../../img/produtos/crepe_editado.png);
-}
-#produto-2 {
-  background-image: url(../../img/produtos/micro_editado.png); 
-}
-#produto-3 {
-  background-image: url(../../img/produtos/neolite-2_editado.png); 
-}
-#produto-4 {
-  background-image: url(../../img/produtos/evaPrincipal_editado.png); 
-}
-#produto-5 {
-  background-image: url(../../img/produtos/tpu-1_editado.png); 
-}
-
-.cardinfo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 10%;
-    margin-bottom: 5%;
-}
-
-.cardinfo > * {
-    display: block;
-}
-
-.cardinfo > label {
-    color: #EFEEEE;
-}
-
-.carddescr {
-    position: absolute;
-    vertical-align: text-bottom;
-    bottom: -50px;
-    padding: 10% 10% 0% 10%;
-    text-align: center;
-}
-
-.montra{
-    height: 70vh;
-    padding-top: 5%;
-    margin-bottom: 100px;
-}
-
-.btnprodutobranco{
-    background:#EFEEEE;
-    font-weight: 700;
-    border-radius:30px;
-    border: none;
-    padding: 10px 25px;
-}
-
-
-.btnprodutobranco a{
-    color: #255E5A;
-    text-decoration: none;
-}
-
-
-
-.btnprodutobranco:hover{
-    background-color: #255E5A;
-    border:#EFEEEE solid 2px;
-  
-}
-
-.btnprodutobranco:hover a{
-    color: #EFEEEE;
-    transition: 0.2s;
-    
-}
-
-
-
-/*pagina contactos*/
-
-.bodycontactos{
+.bodycontactos {
     background-color: #85B4AE;
 }
 
-.formulario{
+
+
+/* formulário contactos*/
+.formulario {
     padding-bottom: 5%;
 }
 
-.inputbox label{
-   color: #EFEEEE;
+.inputbox label {
+    color: #EFEEEE;
 }
 
-.inputbox input{
+.inputbox input {
     height: 40px;
     width: 100%;
     outline: none;
@@ -663,7 +562,7 @@ header{
     padding-left: 15px;
 }
 
-.inputbox textarea{
+.inputbox textarea {
     width: 100%;
     height: 30%;
     outline: none;
@@ -676,8 +575,8 @@ header{
 }
 
 
-.h3titulocontactos{
-    color:  #EFEEEE;
+.h3titulocontactos {
+    color: #EFEEEE;
     font-weight: 700;
     font-size: 36px;
     padding-bottom: 5%;
@@ -685,26 +584,466 @@ header{
 }
 
 
-form .btnverde{
+form .btnverde {
     color: #EFEEEE;
-    
+
 }
 
-.fundofootercontactos{
-   
-    background-image: url(../../img/fundo_onda_2_topo_vescuro.png);
+
+/*footer contactos*/
+
+.fundofootercontactos {
+
+    background-image: url(../../img/fundo_onda_2_topo_vescuro.webp);
     height: 100vh;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-size: 100% 100vh;
+    padding-top: 10%;
 }
 
-.mailcontactos{
+.mailcontactos {
     padding-bottom: 5%;
 }
 
-.ptitulocontactos{
+.ptitulocontactos {
     font-weight: 700;
+}
 
+
+.mapalocalizacao iframe {
+    border-radius: 20px;
+}
+
+
+
+
+/* ______________pagina de um produto - exemplo sola em crepe_____________*/
+
+
+.maindetalheproduto {
+
+    background-image: url(../../img/fundo_onda-01.webp);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+
+}
+
+
+
+.fundoprodudo {
+    background-color: #fffafa;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+}
+
+.imagemprincipal img {
+    width: 100%;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.detalheproduto {
+    padding: 5%;
+}
+
+.detalheproduto img {
+    border-radius: 20px;
+    width: 80%;
+}
+
+
+.detalheproduto h3,
+.detalheproduto p {
+    text-align: left;
+    padding-left: 10%;
+}
+
+.detalheproduto p {
+    color: #255E5A;
+}
+
+.produtoscta p {
+    padding-left: 0%;
+    color: #255E5A;
+}
+
+
+.produtoscta,
+.produtosvolta {
+    text-align: left;
+    padding-left: 13%;
+}
+
+
+.produtoscta .btnverde {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.produtosvolta a {
+    text-decoration: none;
+    color: #255E5A;
+}
+
+.produtosvolta:hover a {
+    font-weight: 700;
+}
+
+
+/*footer para pagina de produtos geral e produto detalhe*/
+
+.footeronda {
+    background-image: url(../../img/fundo_onda_2_topo_vclaro.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+
+/* Importar todos os styles antes de definir media queries*/
+@import "style_slider.css";
+
+.clientesverde .slider {
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+
+    /*geral do site*/
+    .btnverde {
+        background: #255E5A;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        padding: 5px 15px;
+    }
+
+    .btnverde a{
+        font-size: 12px;
+    }
+
+    .h3titulo {
+        font-size: 16px;
+        padding-bottom: 10%;
+    }
+
+    .ptitulo {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .ptexto{
+        font-size: 14px;
+    }
+
+
+    .logonav {
+        background-image: url(../../img/logos/logotipo/logo_sola_ouro_castanho-01.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 65px;
+        width: 60px;
+    }
+
+    .navegacao {
+        height: 100px;
+    }
+
+    .headerhomepage {
+        background-image: url(../../img/onda_hero_home_page_tablet.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        background-size: 100% 100vh;
+
+    }
+
+
+    /*homepage*/
+
+    .mainvideo iframe {
+        border-radius: 20px;
+        width: 100%;
+        height: 315px;
+    }
+
+
+    .sapatosimagem {
+        display: none;
+    }
+
+    .clientesverde {
+        background-color: #255E5A;
+        height: 40%;
+        border-radius: 5% 5% 0 0;
+        padding-bottom: 50px;
+        margin-top: -35%;
+        padding-top: 30%;
+    }
+    
+    .clientesverde .slider {
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .clientesverde .container {
+        display: none;
+    }
+
+    .herotext h1 {
+        font-size: 32px;
+    }
+
+    .herotext p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        padding-left: 0
+    }
+
+ 
+    .missao::before {
+        width: 25px;
+        height: 25px; 
+    }
+
+    .visao::before { 
+        width: 25px;
+        height: 25px;  
+    }
+
+
+    .valores::before {   
+        width: 25px;
+        height: 25px;   
+    }
+
+    .cartao:nth-child(3) {
+        padding-left: 30px;
+    }
+
+    .cartao:last-child {
+        padding-left: 30px;
+        padding-bottom: 10%;
+    }
+
+    .maintexto {
+        transform: translateY(100px);
+    }
+    .maintexto .h2destaque{
+        font-size: 32px;
+        padding-bottom: 10%;
+    }
+    
+    .imgequipa{
+        
+        padding-bottom: 10%;
+     
+    }
+
+    .mainimagemfundo{
+        background-image: url(../../img/fundo_hero_home_page_tablet_topo.png);
+    }
+
+
+}
+
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .logonav {
+        background-image: url(../../img/logos/logotipo/logo_sola_ouro_castanho-01.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 65px;
+        width: 80px;
+    }
+
+    .mainvideo iframe {
+        border-radius: 20px;
+        width: 100%;
+        height: 315px;
+    }
+
+    .headerhomepage {
+        background-image: url(../../img/onda_hero_home_page_tablet.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-size: 100% 100vh;
+    }
+
+    .sapatosimagem {
+        display: none;
+    }
+
+    .btnverde {
+        background: #255E5A;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        padding: 5px 15px;
+    }
+
+    .btnverde a{
+        font-size: 12px;
+    }
+
+    .h3titulo {
+        font-size: 24px;
+        padding-bottom: 10%;
+    }
+
+    .ptitulo {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    .ptexto{
+        font-size: 14px;
+    }
+
+
+    .clientesverde {
+        background-color: #255E5A;
+        height: 40%;
+        border-radius: 5% 5% 0 0;
+        padding-bottom: 50px;
+        margin-top: -25%;
+        padding-top: 20%;
+    }
+
+
+    .clientesverde .slider {
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .clientesverde .container {
+        display: none;
+    }
+
+    .herotext h1 {
+        font-size: 36px;
+    }
+
+    .herotext p {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 16px;
+        padding-left: 0
+    }
+
+ 
+    .missao::before {
+        width: 25px;
+        height: 25px; 
+    }
+
+    .visao::before { 
+        width: 25px;
+        height: 25px;  
+    }
+
+
+    .valores::before {   
+        width: 25px;
+        height: 25px;   
+    }
+
+    .cartao:nth-child(3) {
+        padding-left: 30px;
+    }
+
+    .cartao:last-child {
+        padding-left: 30px;
+        padding-bottom: 10%;
+    }
+
+    .maintexto {
+        transform: translateY(100px);
+    }
+    .maintexto .h2destaque{
+        font-size: 32px;
+        padding-bottom: 5%;
+    }
+    
+    .mainvideo {
+        height: 50vh;
+        transform: translateY(150px);
+    }
+
+    .imgequipa{    
+        padding-bottom: 10%;
+    }
+
+    .mainimagemfundo{
+        background-image: url(../../img/fundo_hero_home_page_tablet_topo.png);
+    }
+
+    .nossaequipa {
+        height: 50vh;
+        padding-top: 5%;
+        margin-bottom: 0px;
+    }
+
+
+    .h3titulo.titulobranco {
+        color: #EFEEEE;
+        text-align: center;
+        padding-top: 0%;
+        padding-bottom: 5%;
+    }
+}
+  
+
+/* Styles quando non desktop links "partem" */
+@media screen and (max-width: 1200px){
+    .clientesverde .slider {
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .clientesverde .container {
+        display: none;
+    }
+}  
+
+/* Styles for desktop devices */
+@media only screen and (min-width: 1024px) {
+    .logonav {
+        background-image: url(../../img/logos/logo_completo/logo_sola_ouro_completo_castanho.svg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 65px;
+        width: 160px;
+    }
 }
