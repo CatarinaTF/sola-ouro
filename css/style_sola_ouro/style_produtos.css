@@ -209,4 +209,8 @@
     text-align: center;
     color: #255E5A;
   }
+  #carddescr-1
+  {
+    bottom: -100px;
+  }
 }
