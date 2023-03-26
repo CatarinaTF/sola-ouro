@@ -1,121 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre nós</title>
+    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.webp">
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
+
+    <link href="assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.3.0-web/css/all.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.3.0-web/css/regular.css" rel="stylesheet">
+
+
+
+
     <link rel="stylesheet" href="css/style_sola_ouro/style.css">
     <link rel="stylesheet" href="css/style_sola_ouro/style_menu.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/style_slider.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/sobre_nos.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/carousel_sobre_nos.css">
+
 
 
 </head>
+
 <body>
-    
-    <header class="headerhomepage">
+
+    <header class="headersobrenos">
 
         <!--nav bar-->
 
-        <div class="container containerheader">
+        <div class="container-fluid containerheader">
 
-            <div class="row navegacao">
+            <div class="container">
 
-                <!--nav logo-->
-                <div class="col-lg-2 col-sm-2 col-xs-2 ">
-                    <a href="index.html" target="_self">
-                                                <div class="logonav"></div>
+                <div class="row navegacao_sobrenos">
 
-                    </a>
+                    <!--nav logo-->
+                    <div class="col-lg-2 col-sm-2 col-xs-2">
+                        <a href="index.html" target="_self">
+                            <div class="logonav"></div>
+                        </a>
+                    </div>
+
+                    <!--nav links-->
+                    <div class="col-lg-7 col-sm-5 col-xs-5 linksnavegacao">
+                        <ul class="linksmenu">
+                            <li>
+                                <a class="linha" href="sobre_nos.html" target="_self">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="servicos.html" target="_self">Serviços</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="produtos.html" target="_self">Produtos</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="noticias.html" target="_self">Notícias</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="contactos.html" target="_self">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--nav selector da lingua-->
+
+
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Idioma
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">PT</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+
+                    <!--nav barra de pesquisa-->
+
+
+                    <div class="barrapesquisa">
+                        <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img
+                                src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                    </div>
+
+                    <!--nav hamburger-->
+
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="sobre_nos.html" target="_self">Sobre nós</a></li>
+                            <li><a class="menu__item" href="servicos.html" target="_self">Serviços</a></li>
+                            <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
+                            <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
+                            <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
+                            <li>
+                                <div class="menu__item barrapesquisa-menu">
+                                    <input type="text" class="form-control" style="display: inline-block;"
+                                        placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg"
+                                            alt="Pesquisa"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item dropdown">
+                                    <button class="btn dropdown-toggle seletoridioma-menu" type="button"
+                                        id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="true">
+                                        Idioma
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu seletoridioma-dropdown-menu">
+                                        <li><a href="#">PT</a></li>
+                                        <li><a href="#">EN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
-                <!--como é que espeficifo que no mobile a imagem do logo muda? é nas media querys?-->
+            </div>
+        </div>
+        <div class="container-fluid containerheader_imagem">
+            <!--imagem de apresentação-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 contadores">
+                        <ul>
+                            <li>
+                                30
+                                <p><span>Anos de <br> experiência</span></p>
 
-                <!--nav links-->
-                <div class="col-lg-7 col-sm-5 col-xs-5 linksnavegacao">
-                    <ul class="linksmenu">
-                        <li>
-                            <a class="linha" href="sobre_nos.html" target="_self">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="servicos.html" target="_self">Serviços</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="produtos.html" target="_self">Produtos</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="noticias.html" target="_self">Notícias</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="contactos.html" target="_self">Contactos</a>
-                        </li>
-                    </ul>
+                            </li>
+                            <li></li>
+                            <li>
+                                50
+                                <p><span>Funcionários</span></p>
+
+                            </li>
+                            <li></li>
+                            <li>
+                                06
+                                <p><span>Países</span></p>
+                            </li>
+                            <li></li>
+                            <li>
+                                220
+                                <p><span>Clientes <br> satisfeitos</span></p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+    </header>
+
+
+    <main class="mainsobrenos">
+
+        <!--main sobre nos - intro -->
+
+        <div class="container intro">
+            <div class="row sobrenoscartoes">
+                <div class="col-lg-12 col-xs-12">
+                    <h3 class="h3titulo">Tratamento personalizado</h3>
                 </div>
 
-                <!--nav selector da lingua-->
+                <div class="col-lg-4 col-sm-4 col-xs-12 cartao">
+                    <p class="ptitulo disp">
+                        Disponibilidade Permanente
+                    </p>
 
-
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                     Idioma
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">PT</a></li>
-                      <li><a href="#">EN</a></li>
-                    </ul>
-                  </div>
-
-                  <!--nav barra de pesquisa-->
-
-                
-                <div class="barrapesquisa">
-                    <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                    <p class="ptexto">
+                        Somos uma equipa, sempre
+                        dedicada à criação e
+                        desenvolvimento das melhores
+                        solas, disponível por telefone,
+                        telemóvel e e-mail.
+                    </p>
                 </div>
 
-                <!--nav hamburger-->
+                <div class="col-lg-4 col-sm-4 col-xs-12 cartao">
+                    <p class="ptitulo acompanhamento">
+                        Acompanhamento do cliente
+                    </p>
 
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-                
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="sobre_nos.html" target="_self">Sobre nós</a></li>
-                        <li><a class="menu__item" href="servicos.html" target="_self">Serviços</a></li>
-                        <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
-                        <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
-                        <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
-                        <li>
-                            <div class="menu__item barrapesquisa-menu">
-                                <input type="text" class="form-control" style="display: inline-block;" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu__item dropdown">
-                                <button class="btn dropdown-toggle seletoridioma-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Idioma
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu seletoridioma-dropdown-menu">
-                                    <li><a href="#">PT</a></li>
-                                    <li><a href="#">EN</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                    <p class="ptexto">
+                        Para nós é fundamental saber se o
+                        cliente ficou satisfeito e quais os
+                        aspetos que poderemos melhorar.
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-sm-4 col-xs-12 cartao">
+                    <p class="ptitulo valores">
+                        Uma Gestão Dedicada
+                    </p>
+
+                    <p class="ptexto">
+                        Com um forte conhecimento
+                        do mercado dos pré-fabricados,
+                        dispõe de todas as informações
+                        para oferecermos os melhores
+                        produtos de acordo com os
+                        objetivos dos clientes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container historia">
+            <div class="row historiatitulo">
+                <div class="col-md-12">
+                    <h3 class="h3titulo">A nossa história</h3>
+                </div>
+            </div>
+
+            <div class="row historialeft">
+                <div class="col-lg-5 col-sm-4">
+                    <p class="ptexto">
+                        Fundada em 1993, a Sola de Ouro – Pré-Fabricados para
+                        Calçado Lda. começou por ser uma micro-empresa. <br><br>
+                        De olhos postos no futuro e com a ambição de expansão
+                        resolvemos mudar para as atuais instalações.
+                        Aliámos a mão de obra humana à inovação tecnológica o que tornou o
+                        nosso crescimento sustentável com base na qualidade dos nossos produtos
+                    </p>
+
+
+                </div>
+
+            </div>
+
+            <div class="row historiaright">
+                <div class="col-lg-4 col-sm-4 col-lg-offset-8 col-sm-offset-8">
+                    <p class="ptexto">
+                        Atualmente empregamos cerca de 50 funcionários e produzimos
+                        Pré-Fabricados para as melhores marcas nacionais e internacionais,
+                        o que leva a que sejamos reconhecidos no mercado do calçado.
+                        A Sola de Ouro fundou, recentemente, uma empresa subsidiária de
+                        injeção de solas em E.V.A. e termoplásticos para dar resposta à
+                        crescente procura deste tipo de produtos.
+                    </p>
+
+
                 </div>
 
             </div>
 
         </div>
 
-    </header>
+        <div class="container politica">
+            <div class="row politicatitulo">
+                <div class="col-md-12">
+                    <h3 class="h3titulo">Politica de Qualidade e Ambiente</h3>
+                </div>
+            </div>
+
+            <div class="row politicatxt">
+                <div class="col-lg-12">
+                    <p class="ptexto">
+                        A Sola de Ouro dedica-se ao desenvolvimento e fabrico de solas pré-fabricadas,
+                        dispondo do know-how e meios para oferecer os melhores produtos de acordo com os
+                        objetivos dos clientes, trabalhando sempre numa ótica de respeito para com o ambiente.
+                    </p>
+                </div>
+
+
+                <div class="row politicabloco1">
+
+                    <div class="col-lg-1" id="mao"></div>
+                    <div class="col-lg-5">
+                        <p class="ptexto">
+                            Estabelecer relações assentes em princípios de confiança e benefício mútuo com
+                            as suas partes interessadas (clientes, fornecedores, subcontratados, colaborados, outros);
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-1" id="foco"></div>
+                    <div class="col-lg-5">
+                        <p class="ptexto">
+                            Focalizar na satisfação das necessidades e expectativas do cliente;
+
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="row politicabloco2">
+
+                    <div class="col-lg-1" id="roda"></div>
+                    <div class="col-lg-5">
+                        <p class="ptexto">
+                            Proporcionar boas condições de trabalho e promover junto dos colaboradores o espírito
+                            de prevenção, de modo a evitar/minimizar erros, acidentes ou danos ambientais;
+                        </p>
+                    </div>
+
+                    <div class="col-lg-1" id="folha"></div>
+                    <div class="col-lg-5">
+                        <p class="ptexto">
+                            Promover a adoção de boas práticas ambientais através da consciencialização dos nossos
+                            colaboradores;
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Politica carousel -->
+                <div class="container montra" id="montra_politica">
+
+                    <div class="container">
+                        <input type="radio" class="radio" name="slider_politica" id="item-1" checked>
+                        <input type="radio" class="radio" name="slider_politica" id="item-2">
+                        <input type="radio" class="radio" name="slider_politica" id="item-3">
+                        <input type="radio" class="radio" name="slider_politica" id="item-4">
+                        <div class="cards">
+                            <label class="sobrenos_card" for="item-1" id="politica-1">
+                                <div class="cardinfo">
+                                    <img src="img/icons/sobre_nos_mao.svg" alt="mão">
+                                    <p class="ptexto maos">
+                                        Estabelecer relações assentes em princípios de confiança e benefício mútuo com
+                                        as suas
+                                        partes interessadas (clientes, fornecedores, subcontratados, colaborados,
+                                        outros);
+                                    </p>
+
+                                </div>
+                            </label>
+                            <label class="sobrenos_card" for="item-2" id="politica-2">
+                                <div class="cardinfo">
+                                    <img src="img/icons/sobre_nos_foco.svg" alt="satisfação">
+                                    <p class="ptexto">
+                                        Focalizar na satisfação das necessidades e expectativas do cliente;
+                                    </p>
+
+                                </div>
+                            </label>
+                            <label class="sobrenos_card" for="item-3" id="politica-3">
+                                <div class="cardinfo">
+                                    <img src="img/icons/sobre_nos_rodas.svg" alt="boas condições">
+                                    <p class="ptexto">
+                                        Proporcionar boas condições de trabalho e promover junto dos colaboradores o
+                                        espírito de
+                                        prevenção, de modo a evitar/minimizar erros, acidentes ou danos ambientais;
+                                    </p>
+
+                                </div>
+                            </label>
+                            <label class="sobrenos_card" for="item-4" id="politica-4">
+                                <div class="cardinfo">
+                                    <img src="img/icons/sobre_nos_folha.svg" alt="boas paraticas ambientais">
+                                    <p class="ptexto">
+                                        Promover a adoção de boas práticas ambientais através da consciencialização dos
+                                        nossos
+                                        colaboradores;
+                                    </p>
+
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-fluid ambiente">
+            <div class="container mainambiente">
+                <div class="row ambtxt">
+                    <div class="col-lg-12">
+                        <p class="ptexto">
+                            <b>Procuramos medidas que permitam controlar os impactos ambientais adversos,</b>
+                            considerando uma perspetiva do
+                            ciclo de vida e <b> prevenção da poluição,</b> destacando-se:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row ambicons">
+                    <div class="col-lg-1" id="residuos"></div>
+                    <div class="col-lg-3">
+                        <p class="ptexto">
+                            A minimização da
+                            produção de resíduos e seu adequado encaminhamento;
+                        </p>
+                    </div>
+
+                    <div class="col-lg-1" id="grafico"></div>
+                    <div class="col-lg-3">
+                        <p class="ptexto">
+                            O contínuo esforço na minimização do consumo de solventes;
+                        </p>
+                    </div>
+
+                    <div class="col-lg-1" id="armazenamento"></div>
+                    <div class="col-lg-3">
+                        <p class="ptexto">
+                            O adequado armazenamento e manuseamento de produtos potencialmente perigosos para o
+                            ambiente.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!--ambiente carousel  -->
+                <div class="container montra" id="montra_ambiente">
+                    <div class="container">
+                        <input type="radio" class="radio" name="slider_ambiente" id="item-ambiente-1" checked>
+                        <input type="radio" class="radio" name="slider_ambiente" id="item-ambiente-2">
+                        <input type="radio" class="radio" name="slider_ambiente" id="item-ambiente-3">
+                        <div class="cards">
+                            <label class="sobrenos_card" for="item-ambiente-1" id="ambiente-1">
+                                <div class="cardinfo">
+
+                                    <img src="img/icons/sobre_nos_diminuicao_residuos.svg"
+                                        alt="minimização de residuos">
+
+                                    <p class="ptexto">
+                                        A minimização da
+                                        produção de resíduos e seu adequado encaminhamento;
+                                    </p>
+
+                                </div>
+                            </label>
+                            <label class="sobrenos_card" for="item-ambiente-2" id="ambiente-2">
+                                <div class="cardinfo">
+                                    <img src="img/icons/sobre_nos_grafico.svg" alt="diminuição de solventes">
+                                    <p class="ptexto">
+                                        O contínuo esforço na minimização do consumo de solventes;
+                                    </p>
+
+                                </div>
+                            </label>
+                            <label class="sobrenos_card" for="item-ambiente-3" id="ambiente-3">
+                                <div class="cardinfo">
+
+                                    <img src="img/icons/sobre_nos_armazenamento.svg" alt="armazenamento de residuos">
+                                    <p class="ptexto">
+                                        O adequado armazenamento e manuseamento de produtos potencialmente perigosos
+                                        para o
+                                        ambiente.
+                                    </p>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row ambtxt">
+                    <div class="col-lg-12">
+                        <p class="ptexto">
+                            <b>Assegurar o cumprimento </b> das obrigações de conformidade em
+                            vigor aplicáveis ao ambiente e ao produto da Sola de Ouro.
+                            Assegurar o funcionamento de um Sistema de Gestão de Qualidade e Ambiente
+                            de acordo com as normas <b> NP EN ISO 9001 e NP EN ISO 14001</b>, garantindo que os
+                            requisitos especificados sejam cumpridos e procurando uma melhoria contínua da sua eficácia.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container conduta">
+            <div class="row condutatitulo">
+                <div class="col-lg-12">
+                    <h3 class="h3titulo">
+                        Princípios de Conduta Ambiental
+                    </h3>
+                </div>
+
+            </div>
+
+
+            <div class="row condutatxt">
+
+                <div class="col-lg-6">
+                    <p class="ptexto">
+                        A Sola de Ouro procura atuar com responsabilidade em relação ao meio
+                        ambiente e está comprometida em seguir uma política ambiental juntamente
+                        com todos os seus parceiros de negócios, ou seja, fornecedores.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="row condutabloco">
+
+                <div class="col-lg-6">
+                    <ul>
+                        <li class="check">
+                            <p class="ptexto">
+                                <b>Todos os materiais e produtos químicos</b> a fornecer à Sola de Ouro <b>deverão
+                                    cumprir
+                                    o regulamento REACH</b>. Poderão ser solicitados outros critérios mais restritivos.
+
+                            </p>
+                        </li>
+                        <li class="check">
+                            <p class="ptexto">
+                                No caso de produtos químicos deverão, sempre, ser disponibilizadas as respetivas
+                                fichas de dados de segurança devendo, <b>sempre que viável, promover o uso de produtos
+                                    menos agressivos para a saúde e meio ambiente.</b>
+
+                            </p>
+
+                        </li>
+                        <li class="check">
+                            <p class="ptexto">
+                                <b>Proteção ambiental</b>: Os fornecedores devem agir de acordo com os princípios de
+                                precaução,
+                                tomando a iniciativa de garantir a promoção de maior responsabilidade ambiental.
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-offset-6 imgarmz"></div>
+
+
+            </div>
+
+            <div class="row condutabloco">
+                <div class="col-lg-6 imgconduta"></div>
+                <div class="col-lg-6">
+                    <ul>
+                        <li class="check">
+                            <p class="ptexto">
+                                <b>Gestão de resíduos</b> com especial atenção
+                                para os resíduos perigosos e as emissões que não podem ser despejados ou descarregados
+                                de forma ilegal.
+                            </p>
+
+                        </li>
+                        <li class="check">
+                            <p class="ptexto">
+
+                                Ter condições que permitam<b>prevenir a occorência de incêndios</b>ou outras situações
+                                de emergências e,
+                                caso ocorram, ter meios para resposta e contenção que permitam minimizar o seu impacto.
+                            </p>
+
+
+                        </li>
+                        <li class="check">
+                            <p class="ptexto">
+                                <b>Cumprir</b>, na generalidade, com a <b>legislação ambiental aplicável</b>
+                            </p>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+            <!--conduta carousel  -->
+            <div class="container montra" id="montra_conduta">
+                <div class="container">
+                    <input type="radio" class="radio" name="slider_conduta" id="item-conduta-1" checked>
+                    <input type="radio" class="radio" name="slider_conduta" id="item-conduta-2">
+                    <input type="radio" class="radio" name="slider_conduta" id="item-conduta-3">
+                    <input type="radio" class="radio" name="slider_conduta" id="item-conduta-4">
+                    <input type="radio" class="radio" name="slider_conduta" id="item-conduta-5">
+                    <input type="radio" class="radio" name="slider_conduta" id="item-conduta-6">
+                    <div class="cards">
+                        <label class="sobrenos_card cardverdec" for="item-conduta-1" id="conduta-1">
+                            <div class="cardinfo">
+                                <img src="img/icons/sobre_nos_check_branco.svg" alt="check">
+                                <p class="ptexto"> <b>Todos os materiais e produtos químicos</b> a fornecer à Sola de
+                                    Ouro <b>deverão cumprir o regulamento REACH</b>. Poderão ser solicitados outros
+                                    critérios mais restritivos.</p>
+                            </div>
+                        </label>
+                        <label class="sobrenos_card cardverdec" for="item-conduta-2" id="conduta-2">
+                            <div class="cardinfo">
+                                <img src="img/icons/sobre_nos_check_branco.svg" alt="check">
+                                <p class="ptexto"> No caso de produtos químicos deverão, sempre, ser disponibilizadas as
+                                    respetivas fichas de dados de segurança devendo, <b>sempre que viável, promover o
+                                        uso de produtos menos agressivos para a saúde e meio ambiente.</b> </p>
+                            </div>
+                        </label>
+                        <label class="sobrenos_card cardverdec" for="item-conduta-3" id="conduta-3">
+                            <div class="cardinfo">
+                                <img src="img/icons/sobre_nos_check_branco.svg" alt="check">
+                                <p class="ptexto"> <b>Proteção ambiental</b>: Os fornecedores devem agir de acordo com
+                                    os princípios de precaução, tomando a iniciativa de garantir a promoção de maior
+                                    responsabilidade ambiental. </p>
+                            </div>
+                        </label>
+                        <label class="sobrenos_card cardverdec" for="item-conduta-4" id="conduta-4">
+                            <div class="cardinfo">
+                                <img src="img/icons/sobre_nos_check_branco.svg" alt="check">
+                                <p class="ptexto">
+                                    <b>Gestão de resíduos</b> com especial atenção
+                                    para os resíduos perigosos e as emissões que não podem ser despejados ou
+                                    descarregados
+                                    de forma ilegal.
+                                </p>
+                            </div>
+                        </label>
+                        <label class="sobrenos_card cardverdec" for="item-conduta-5" id="conduta-5">
+                            <div class="cardinfo">
+                                <img src="img/icons/sobre_nos_check_branco.svg" alt="check">
+                                <p class="ptexto">
+
+                                    Ter condições que permitam<b>prevenir a occorência de incêndios</b>ou outras
+                                    situações
+                                    de emergências e,
+                                    caso ocorram, ter meios para resposta e contenção que permitam minimizar o seu
+                                    impacto.
+                                </p>
+                            </div>
+                        </label>
+                        <label class="sobrenos_card cardverdec" for="item-conduta-6" id="conduta-6">
+                            <div class="cardinfo">
+                                <img src="img/icons/sobre_nos_check_branco.svg" alt="check">
+                                <p class="ptexto">
+                                    <b>Cumprir</b>, na generalidade, com a <b>legislação ambiental aplicável</b>
+                                </p>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="container-fluid maintrabalharconsigo">
+
+            <div class="container trabalharconsigo">
+                <div class="row trabalharconteudo">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <h2 class="h2destaque">Queremos trabalhar <br> consigo!</h2>
+
+                        <button class="btnverde"><a href="contactos.html">Contacte-nos</a></button>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <img src="img/sobre_nos/queremos_trabalhar_consigo.png" alt="trabalhar_consigo">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <footer>
+        <div class="container-fluid fundofooter" id="footersobrenos">
+            <div class="container footerconteudo">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 listadecontactos">
+                        <ul class="contactos">
+                            <li class="footertelefone pfooter">
+                                <a href="callto:+351 256 866 034">+351 256 866 034</a>
+                            </li>
+
+                            <li class="footermail pfooter">
+                                <a href="mailto:geral@soladeouro.pt">geral@soladeouro.pt</a>
+                            </li>
+
+                            <li class="footermorada pfooter">
+                                Rua Monte Redondo, nº 205 –<br> Zona Industrial de Nogueira do Cravo<br> 3700-916
+                                Nogueira do Cravo
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12 col-xs-12">
+                                <img src="img/footer/Norte-2020.webp" alt="norte2020">
+                            </div>
+                            <div class="col-lg-2 col-sm-2 col-xs-2">
+                                <img src="img/footer/pme_execlencia_logo_editado.webp" alt="pme">
+                            </div>
+
+                            <div class="col-lg-2 col-lg-2 col-sm-2 col-xs-2">
+                                <img src="img/footer/pme_logo_editado.webp" alt="pme">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </footer>
+
 
 
 
@@ -140,4 +755,5 @@
     <script src="js/bootstrap.min.js"></script>
 
 </body>
+
 </html>

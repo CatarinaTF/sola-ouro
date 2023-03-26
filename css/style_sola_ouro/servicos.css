@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+
+.headerservicos{
+    
+    background-image: url(../../img/serviços/servicos_header.png);
+    background-size: 100% 100vh;
+    background-position: center;
+}
+
+.seletoridioma{
+    background-color: #f2efeb;   
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    z-index: 1;
+}
+
+.dropdown-menu{
+    border: none;
+    background-color: #f2efeb;
+    
+}
+
+.dropdown-menu a{
+    color: #545454;
+    
+}
+
+
+.barrapesquisa{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f2efeb;
+    border-radius: 30px;
+    align-items: center;
+    z-index: 2;
+    
+
+}
+
+
+.barrapesquisa:hover input{
+    width: 100px;
+}
+
+.barrapesquisa input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 300;
+    font-size:16px; 
+    transition: 0.8s;
+    background: transparent;
+}
+
+.barrapesquisa a img{
+    width: 20px;
+    height: 20px;
+}
+
+/* mainservicos */
+
+
+
+.ideia{
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+}
+
+
+.ideiaimg{
+    background-image: url(../../img/servicos/servicos_ideia.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.modelacao{
+    display: flex;
+    align-items: center;
+}
+
+.modelacaoimg{
+    background-image: url(../../img/servicos/modelacao.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+    
+}
+
+
+/* desenvolvimento */
+.desenvolvimento{
+    background-image: url(../../img/fundo_onda_topo-02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.maindesenvolvimento{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+
+}
+
+.videoframe{
+    margin-top: 5%;
+}
+.devideo{
+    color: #824733;
+}
+
+.entrega{
+    margin-top: 5%;
+}
+
+
+/*resultado final*/
+
+.fundobege{
+    background-color: #E2DAD6;
+    padding: 0;
+}
+
+.resultadofinal{
+    background-color: #255E5A;
+    height: 40%;
+    border-radius: 5% 5% 0 0;
+    padding-bottom: 50px;
+}
+
+.mainresultadofinal{
+    padding-top: 5%;
+}
+.servicoh2{
+    color: #EFEEEE;
+}
+
+.imgresultado{
+    background-image: url(../../img/servicos/servicos_resultado_final.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+.btnbranco{
+    background: #EFEEEE;
+    font-weight: 700;
+    border-radius:30px;
+    border: none;
+    padding: 10px 25px;
+}
+
+.btnbranco a{
+    color: #255E5A;
+    text-decoration: none;
+}
+
+.btnbranco:hover{
+    background-color:#e2dad600;
+    border: #EFEEEE solid 2px;
+}
+
+.btnbranco:hover a{
+    color: #EFEEEE;
+    transition: 0.5s;
+}
+
+

@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap');
+
+
+.headersobrenos{
+    
+    background-image: url(../../img/sobre_nos/sobre_nos_header.png);
+    background-size: 100% 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerheader{
+    background-color: #E2DAD6;   
+}
+
+.seletoridioma{
+    background-color: #f2efeb;   
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    z-index: 1;
+}
+
+.dropdown-menu{
+    border: none;
+    background-color: #f2efeb;
+    
+}
+
+.dropdown-menu a{
+    color: #545454;
+    
+}
+
+
+.barrapesquisa{
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #f2efeb;
+    border-radius: 30px;
+    align-items: center;
+    z-index: 2;
+}
+
+.navegacao_sobrenos {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    cursor: pointer;
+    background-color: #E2DAD6;
+    height: 100px;
+}
+
+.barrapesquisa:hover input{
+    width: 100px;
+}
+
+.barrapesquisa input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 300;
+    font-size:16px; 
+    transition: 0.8s;
+    background: transparent;
+}
+
+.barrapesquisa a img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* contadores */
+
+.contadores{
+    background-color: #255E5A;
+    border-radius: 40px;
+    height: 300px;
+    justify-content: center;
+    margin-top: 35%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.contadores ul{
+    padding: 0;
+}
+
+.contadores li {
+    list-style: none;
+    color: #E2DAD6;
+    display: inline-block;
+    text-align: center;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.contadores ul li:not(:last-child):nth-child(even){
+    margin: 30px 50px 0px 50px;
+}
+
+.contadores ul li:nth-child(odd){
+    vertical-align: top;
+}
+
+.contadores ul li:nth-child(even){
+    border-right: 3px solid #E2DAD6;
+    height: 170px;
+}
+
+.contadores li p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*main sobre nos - intro */
+
+
+.intro{
+    margin-top: 5%;
+}
+
+.disp::before{
+    content: url(../../img/icons/sobre_nos_disponibilidade01.svg);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+
+}
+
+.acompanhamento::before{
+    content: url(../../img/icons/sobre_nos_acompanhamento.svg);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+
+}
+
+.valores::before{
+    content: url(../../img/icons/sobre_nos_gestao.svg);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* historia */
+
+.historia{
+    background-image: url(../../img/sobre_nos/sola_ouro_graficos_cronologia.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    background-position-y: center;
+
+}
+
+.historiatitulo{
+    margin-top: 30px;
+    margin-left: 15px;
+    
+}
+
+.historialeft{
+    margin-left: 15px;
+    
+}
+
+.historiaright{
+   margin-top: 20%;
+   margin-right: 20px;
+   
+}
+
+
+/* politica */
+
+.politica{
+    margin-top: 5%;
+}
+
+.politicatitulo{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.politicatxt{
+    margin-left: 15px;
+}
+
+.politicabloco1{
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+.politicabloco2{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+#mao{
+    background-image: url(../../img/icons/sobre_nos_mao.svg);
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+#foco{
+    background-image: url(../../img/icons/sobre_nos_foco.svg);
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+    
+}
+
+#roda{
+    background-image: url(../../img/icons/sobre_nos_rodas.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+#folha{
+    background-image: url(../../img/icons/sobre_nos_folha.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+/* Ambiente */
+
+.ambiente{
+    margin-top: 5%;
+    background-image: url(../../img/fundo_onda_topo-02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+}
+
+.mainambiente{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+.ambtxt{
+    margin-top: 10%;
+    
+}
+
+.ambicons{
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#residuos{
+    background-image: url(../../img/icons/sobre_nos_diminuicao_residuos.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+#grafico{
+    background-image: url(../../img/icons/sobre_nos_grafico.svg);
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+#armazenamento{
+    background-image: url(../../img/icons/sobre_nos_armazenamento.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+/*Conduta Ambiental */
+
+.conduta{
+    margin-top: 5%;
+}
+
+.condutabloco{
+    margin-top: 80px;
+}
+
+.condutabloco ul{
+    list-style-image: url(../../img/icons/sobre_nos_check.svg);
+}
+
+.condutabloco ul li{
+    margin-bottom: 15px;
+}
+
+.check{
+    font-size: 30px;
+}
+
+
+.imgarmz{
+    background-image: url(../../img/sobre_nos/armazenamento.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.imgconduta{
+    background-image: url(../../img/sobre_nos/conduta_ambiental.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+}
+
+
+/* Botão Contactos */
+
+.maintrabalharconsigo{
+    margin-top: 5%;
+    background-image: url(../../img/fundo_onda_topo-02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    
+}
+
+.trabalharconsigo{
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.trabalharconteudo{
+    align-items: center;
+}
+.h2destaque{
+    font-weight: 700;
+    font-size: 36px;
+    color: #255E5A;
+    padding-bottom:10%; 
+}
+
+.imgtrabalharconsigo{
+    background-image: url(../../img/sobre_nos/queremos_trabalhar_consigo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+#footersobrenos{
+    margin-top: -5vh;
+}
+
+/* Importar styles antes de definir media queries*/
+@import "carousell_sobre_nos.css";
+
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+    .montra
+    {
+        height: 50vh;
+        padding-top: 5%;
+        display: block;
+    }
+    .politicabloco2, .politicabloco1
+    {
+        display: none;
+    }
+    .ambicons
+    {
+        display: none;
+    }
+    .condutabloco
+    {
+        display: none;
+    }
+
+    .trabalharconsigo{
+        padding-top: 40%;
+        padding-bottom: 10%;
+    }
+    .maintrabalharconsigo{
+        margin-top: 5%;
+        background-image: url(../../img/fundo_hero_home_page_tablet_topo.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+        
+    }
+    /* historia */
+    .historiatitulo::before{
+        background-image: url(../../img/sobre_nos/sola_ouro_graficos_servicos_historia1.png);
+        background-size: contain;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 25vh;
+        content: "";
+    }
+    .historia{
+        background-image: none;
+    }
+
+    .historiaright {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .historiaright::before{
+        background-image: url(../../img/sobre_nos/sola_ouro_graficos_servicos_historia2.png);
+        background-size: contain;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 25vh;
+        content: "";
+    }
+    /* contadores */
+
+    .contadores{
+        height: fit-content;
+        border-radius: 20px;
+        width: fit-content;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #E2DAD6;
+    }
+    .contadores span {
+        font-weight: 300;
+    }
+
+    .contadores li {
+        list-style: none;
+        color: #255E5A;
+        display: block;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .contadores ul li:not(:last-child):nth-child(even){
+        margin: 10px 20px 0px 20px;
+    }
+
+    .contadores ul li:nth-child(even){
+        border-bottom: 2px solid #255E5A;
+        height: 1px;
+    }
+
+    .ambiente{
+        background-image: none;
+        margin-top: 0px;
+    }
+    .mainambiente{
+        padding-top: 0px;
+    }
+    .trabalharconteudo img{
+        padding-top: 20px;
+    }
+}
+
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .montra
+    {
+        height: 55vh;
+        padding-top: 5%;
+        margin-bottom: 100px;
+        display: block;
+    }
+    .politicabloco2, .politicabloco1
+    {
+        display: none;
+    }
+    .ambicons
+    {
+        display: none;
+    }
+    .condutabloco
+    {
+        display: none;
+    }
+    .headersobrenos{
+        height: 80vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    /* contadores */
+
+    .contadores{
+        height: 220px;        
+        border-radius: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contadores li {
+        list-style: none;
+        color: #E2DAD6;
+        display: inline-block;
+        text-align: center;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .contadores span {
+        font-weight: 300;
+    }
+    .contadores ul li:not(:last-child):nth-child(even){
+        margin: 10px 20px 0px 20px;
+    }
+
+    .contadores ul li:nth-child(even){
+        border-right: 3px solid #E2DAD6;
+        height: 90px;
+    }
+
+    .ambiente{
+        margin-top: 0px;
+        background-image: none;
+    }
+    .mainambiente{
+        padding-top: 0px;
+    }
+}
+
+/* Styles for desktop devices */
+@media only screen and (min-width: 1024px) {
+
+    .montra
+    {
+        display: none;
+    }
+}
