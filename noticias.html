@@ -4,122 +4,261 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sola de Ouro</title>
+    <title>Notícias</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
+    
+    
+    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.webp">
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+
+    <link href="assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.3.0-web/css/all.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.3.0-web/css/regular.css" rel="stylesheet">
+
+
+
+
     <link rel="stylesheet" href="css/style_sola_ouro/style.css">
     <link rel="stylesheet" href="css/style_sola_ouro/style_menu.css">
-
+    <link rel="stylesheet" href="css/style_sola_ouro/style_slider.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/noticias.css">
+    
 
 </head>
 <body>
     
-    <header class="headerhomepage">
+
+
+    <header>
 
         <!--nav bar-->
 
-        <div class="container containerheader">
+        <div class="container-fluid containerheader">
 
-            <div class="row navegacao">
+            <div class="container">
 
-                <!--nav logo-->
-                <div class="col-lg-2 col-sm-2 col-xs-2 ">
-                    <a href="index.html" target="_self">
-                                                <div class="logonav"></div>
+                <div class="row navegacao_noticias">
 
-                    </a>
-                </div>
+                    <!--nav logo-->
+                    <div class="col-lg-2 col-sm-2 col-xs-2">
+                        <a href="index.html" target="_self">
+                            <div class="logonav"></div>
+                        </a>
+                    </div>
 
-                <!--como é que espeficifo que no mobile a imagem do logo muda? é nas media querys?-->
+                    <!--nav links-->
+                    <div class="col-lg-7 col-sm-5 col-xs-5 linksnavegacao">
+                        <ul class="linksmenu">
+                            <li>
+                                <a class="linha" href="sobre_nos.html" target="_self">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="servicos.html" target="_self">Serviços</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="produtos.html" target="_self">Produtos</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="noticias.html" target="_self">Notícias</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="contactos.html" target="_self">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
 
-                <!--nav links-->
-                <div class="col-lg-7 col-sm-5 col-xs-5 linksnavegacao">
-                    <ul class="linksmenu">
-                        <li>
-                            <a class="linha" href="sobre_nos.html" target="_self">Sobre nós</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="servicos.html" target="_self">Serviços</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="produtos.html" target="_self">Produtos</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="noticias.html" target="_self">Notícias</a>
-                        </li>
-                        <li>
-                            <a class="linha" href="contactos.html" target="_self">Contactos</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--nav selector da lingua-->
+                    <!--nav selector da lingua-->
 
 
-                <div class="dropdown">
-                    <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                     Idioma
-                      <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">PT</a></li>
-                      <li><a href="#">EN</a></li>
-                    </ul>
-                  </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Idioma
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">PT</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
 
-                  <!--nav barra de pesquisa-->
+                    <!--nav barra de pesquisa-->
 
-                
-                <div class="barrapesquisa">
-                    <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
-                </div>
 
-                <!--nav hamburger-->
+                    <div class="barrapesquisa">
+                        <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img
+                                src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                    </div>
 
-                <div class="hamburger-menu">
-                    <input id="menu__toggle" type="checkbox" />
-                    <label class="menu__btn" for="menu__toggle">
-                        <span></span>
-                    </label>
-                
-                    <ul class="menu__box">
-                        <li><a class="menu__item" href="sobre_nos.html" target="_self">Sobre nós</a></li>
-                        <li><a class="menu__item" href="servicos.html" target="_self">Serviços</a></li>
-                        <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
-                        <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
-                        <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
-                        <li>
-                            <div class="menu__item barrapesquisa-menu">
-                                <input type="text" class="form-control" style="display: inline-block;" placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="menu__item dropdown">
-                                <button class="btn dropdown-toggle seletoridioma-menu" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Idioma
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu seletoridioma-dropdown-menu">
-                                    <li><a href="#">PT</a></li>
-                                    <li><a href="#">EN</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                    <!--nav hamburger-->
+
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="sobre_nos.html" target="_self">Sobre nós</a></li>
+                            <li><a class="menu__item" href="servicos.html" target="_self">Serviços</a></li>
+                            <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
+                            <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
+                            <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
+                            <li>
+                                <div class="menu__item barrapesquisa-menu">
+                                    <input type="text" class="form-control" style="display: inline-block;"
+                                        placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg"
+                                            alt="Pesquisa"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item dropdown">
+                                    <button class="btn dropdown-toggle seletoridioma-menu" type="button"
+                                        id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="true">
+                                        Idioma
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu seletoridioma-dropdown-menu">
+                                        <li><a href="#">PT</a></li>
+                                        <li><a href="#">EN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
-
+        </div>
+        <div class="container-fluid containerheader_noticias">
         </div>
 
     </header>
 
 
 
+    <!-- grid noticias-->
+    
+    <!---->
+    
+    
+        <div class="container mainnoticias">
+            <div class="row gridnoticias">
 
+                <div class="col-lg-12">
+                    <h3 class="h3titulo">Notícias</h3>
+                </div>
+
+            </div>
+
+            <div class="row newsbloco1">
+            
+                    <div class="col-lg-6 col-sm-12 col-xs-12 newscoluna1">
+
+                        <div class="novaidentidade">
+                            <h3 class="h3titulo">Nova Identidade</h3>
+                            <p class="ptexto"> <b>27 Março, 2023</b></p>
+                                
+                            <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+                        </div>
+
+                        <div class="futurmoda">
+                            <h3 class="h3titulo">Futurmoda 2023</h3>
+                            <p class="ptexto"> <b>27 Março, 2023</b></p>
+                            <button class="btnverde btnfuturmoda"><a href="noticias_ex1.html" >Ler</a></button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 col-xs-12 newscoluna2">
+
+                        <div class="lineapelle">
+                        <h3 class="h3titulo">Lineapelle 2022</h3>
+                        <p class="ptexto"> <b>27 Março, 2023</b></p>
+                        <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+                        </div>
+
+                        <div class="micam">
+                            <h3 class="h3titulo">Micam 2021</h3>
+                            <p class="ptexto"> <b>27 Março, 2023</b></p>
+                            <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+                        </div>
+
+                    </div>
+
+            </div>
+
+            <div class="row pme">
+                <div class="col-lg-12 col-sm-12 newspme">
+                    <h3 class="h3titulo">Líder<br> PME<br> 2020</h3>
+                    <p class="ptexto"><b>27 Março, 2023</b></p>
+                    <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+
+                </div>
+
+            </div>
+            
+
+        </div>
+
+    
+
+
+        <footer>
+            <div class="container-fluid fundofooter">
+                <div class="container footerconteudo">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12 listadecontactos">
+                            <ul class="contactos">
+                                <li class="footertelefone pfooter">
+                                    <a href="callto:+351 256 866 034">+351 256 866 034</a>
+                                </li>
+    
+                                <li class="footermail pfooter">
+                                    <a href="mailto:geral@soladeouro.pt">geral@soladeouro.pt</a>
+                                </li>
+    
+                                <li class="footermorada pfooter">
+                                    Rua Monte Redondo, nº 205 –<br> Zona Industrial de Nogueira do Cravo<br> 3700-916
+                                    Nogueira do Cravo
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-lg-6 col-sm-12 col-xs-12 ">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-12 col-xs-12">
+                                    <img src="img/footer/Norte-2020.webp" alt="norte2020">
+                                </div>
+                                <div class="col-lg-2 col-sm-2 col-xs-2">
+                                    <img src="img/footer/pme_execlencia_logo_editado.webp" alt="pme">
+                                </div>
+    
+                                <div class="col-lg-2 col-lg-2 col-sm-2 col-xs-2">
+                                    <img src="img/footer/pme_logo_editado.webp" alt="pme">
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+    
+    
+        </footer>
 
 
 

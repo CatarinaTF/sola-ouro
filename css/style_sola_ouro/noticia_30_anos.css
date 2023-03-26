@@ -1,0 +1,223 @@
+.data30anos{
+    margin-bottom: 50px;
+    
+}
+
+.data30anos p{
+    color: #BC8757;
+}
+
+.txt-img-30anos{
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+.txt-img-30anos p{
+    color: #255E5A;
+
+}
+
+.imagem30anos{
+    background-image: url(../../img/noticia_30anos/30_anos.svg);
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.botoes button{
+    margin-top: 200px;
+    margin-right: 15px;
+    margin-bottom: 100px;
+}
+
+
+
+.compartilhetitle h3{
+    color: #824733;
+}
+
+
+
+#linkedin{
+    background-image: url(../../img/icons/noticia_linkedin.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+#twitter{
+    background-image: url(../../img/icons/noticia_twitter-01.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+#slack{
+    background-image: url(../../img/icons/noticia_slack.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+#facebook{
+    background-image: url(../../img/icons/noticia_facebook.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+#email{
+    background-image: url(../../img/icons/noticia_email.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+
+.proximasnoticias{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.proximasnoticias button{
+    margin-left: 20px;
+}
+
+.proxnoticia{
+    background-image: url(../../img/noticias/nova-identidade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.proxnoticia p{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+.proxnoticia2{
+    background-image: url(../../img/noticias/lineapelle.png  );
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.proxnoticia2 p{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+
+.proxnoticia3{
+    background-image: url(../../img/noticias/futurmoda-edicion-48-728.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 350px;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.proxnoticia3 p{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+/* media queries para mobile*/
+
+@media only screen and (max-width: 767px){
+
+    
+    .proximasnoticias{
+        margin-top: 50px;
+    }
+
+    .proximasnoticias div{
+            margin-bottom: 10px;
+    }
+
+
+    .proximasnoticias div button{
+        margin-bottom: 20px;
+    }
+
+    .botoes button{
+        margin-top: 100px;
+    }
+    
+}
+
+/* Tablet Media Query */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .titulo30anos h3{
+        font-size: 32px;
+    }
+
+    .data30anos p{
+        font-size: 24px;
+    }
+
+    .txt-img-30anos p{
+        font-size: 26px;
+    }
+
+    .proximasnoticias div{
+        margin-bottom: 50px;
+}
+
+    .proximasnoticias p{
+        font-size: 26px;
+    }
+
+    .proxnoticia{
+        width: 100%;
+        height: 400px;
+    }
+
+    .proxnoticia2{
+        width: 100%;
+        height: 400px;
+    }
+
+    .proxnoticia3{
+        width: 100%;
+        height: 400px;
+    }
+
+
+}

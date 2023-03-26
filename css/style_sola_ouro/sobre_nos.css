@@ -375,6 +375,12 @@
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 767px) {
+    .headersobrenos{
+        background-image: url(../../img/sobre_nos/fundo_hero_sobre_nos_tablet_mobile.png);
+        background-size: 100% 100vh;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
     .montra
     {
         height: 50vh;
@@ -542,6 +548,12 @@
     }
     .mainambiente{
         padding-top: 0px;
+    }
+
+
+    .sobrenoscartoes h3{
+        padding-top: 20%;
+        padding-left: 35px;
     }
 }
 

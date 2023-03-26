@@ -1,0 +1,389 @@
+
+.containerheader_noticias{
+    background-image: url(../../img/noticias/noticias_header.png);
+    background-size: 100% 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.containerheader{
+    background-color:#E2DAD6;
+}
+
+.img30anos{
+    background-image: url(../../img/noticias/noticias_header.png);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 70vh;
+}
+
+.imagemnoticias{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navegacao_noticias {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    cursor: pointer;
+    background-color: #E2DAD6;
+    height: 100px;
+}
+
+.mainnoticias{
+    margin-bottom: 5%;
+}
+
+.novaidentidade{
+    background-image: url(../../img/noticias/nova-identidade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.novaidentidade h3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+.novaidentidade p{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 100%;
+}
+
+.novaidentidade button{
+    display: inline;
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 80%;
+    
+}
+
+
+.futurmoda{
+    background-image: url(../../img/noticias/futurmoda-edicion-48-728.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    width: 30vw;
+    border-radius: 60px;
+    position: relative;
+}
+
+.futurmoda h3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+.futurmoda p{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 55%;
+}
+
+.futurmoda button{
+    display: inline;
+    position: absolute;
+    margin-top: 53%;
+    margin-left: 80%;
+
+}
+
+
+.lineapelle{
+    background-image: url(../../img/noticias/lineapelle.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 60px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.lineapelle h3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+
+}
+
+.lineapelle p{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 55%;
+    color: #f2efeb;
+}
+
+.lineapelle button{
+    display: inline;
+    position: absolute;
+    margin-top: 53%;
+    margin-left: 80%;
+}
+
+.micam{
+    background-image: url(../../img/noticias/micam_95.png);
+    background-position: -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    border-radius: 60px;
+    position: relative;
+}
+
+
+.micam h3{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+.micam p{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 100%;
+    color: #f2efeb;
+}
+
+.micam button{
+    display: inline;
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 80%;
+}
+
+.pme {
+    margin-top: 5%;
+}
+
+.newspme{
+    background-image: url(../../img/noticias/2PME_Lider_2020_2D_cores.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    border-radius: 60px;
+}
+
+.newspme h3{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #f2efeb;
+}
+
+.newspme p{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 25%;
+}
+
+.newspme button{
+    display: inline;
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 80%;
+    
+}
+
+/* Mobile media query */
+
+@media only screen and (max-width: 767px) {
+
+    .newscoluna1 {
+        margin-bottom: 5%;
+    }
+
+    .novaidentidade {
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .novaidentidade p {
+        margin-left: 5%;
+        margin-top: 55%;
+    }
+    
+    .novaidentidade button{
+        margin-top: 53%;
+        margin-left: 75%;
+    }
+
+    .futurmoda{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .futurmoda button {
+        margin-left: 76%;
+    }
+
+    .lineapelle{
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .lineapelle button {
+        margin-left: 76%;
+    }
+    
+    .micam{
+        background-position: 0;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .micam p {
+        margin-top: 55%;
+        margin-left: 5%;
+    }
+
+    .micam button {
+        margin-top: 53%;
+        margin-left: 76%;
+    }
+
+    .newspme{
+        background-position: -280px;
+        height: 40vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    .newspme h3{
+        margin-top: 5%;
+        margin-left: 1%;
+    }
+    
+    .newspme p{
+        margin-left: 5%;
+        margin-top: 75%;
+    }
+    
+    .newspme button{
+        margin-top: 72%;
+        margin-left: 70%;
+        
+    }
+}
+
+/* Tablet media query */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+ 
+    .newscoluna1 {
+        margin-bottom: 5%;
+    }
+
+    .novaidentidade {
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    
+    .novaidentidade p {
+        margin-left: 5%;
+        margin-top: 40%;
+        font-size: 22px;
+        color: #f2efeb;
+    }
+    
+    .novaidentidade button{
+        margin-top: 40%;
+        margin-left: 85%;
+
+    }
+
+    .futurmoda{
+        height: 30vh;
+        width: 100%;
+    }
+
+    .futurmoda button {
+        margin-top: 40%;
+        margin-left: 85%;
+    }
+
+    .futurmoda p{
+        margin-top: 40%;
+        font-size: 22px;
+        color: #f2efeb;
+
+    }
+
+    .lineapelle{
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .lineapelle button {
+        margin-top: 40%;
+        margin-left: 85%;
+    }
+    
+    .lineapelle p{
+        margin-top: 40%;
+        font-size: 22px;
+        color: #f2efeb;
+    }
+    .micam{
+        background-position: 0;
+        height: 30vh;
+        width: 100%;
+    }
+
+    .micam p {
+        margin-top: 40%;
+        font-size: 22px;
+        color: #f2efeb;
+    }
+
+    .micam button {
+        margin-top: 40%;
+        margin-left: 85%;
+    }
+
+    .newspme{
+        background-position: -280px;
+        height: 40vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    .newspme h3{
+        margin-top: 5%;
+        margin-left: 1%;
+        color: #255E5A;
+    }
+    
+    .newspme p{
+        margin-top: 50%;
+        font-size: 22px;
+        color: #255E5A;
+    }
+    
+    .newspme button{
+        margin-top: 50%;
+        margin-left: 85%;
+        
+    }
+}

@@ -4,21 +4,232 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esta noticia</title>
+    <title>Sola de Ouro 30 anos</title>
 
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 
+
+    <link rel="icon" href="img/logos/logotipo/logo_sola_ouro_verde-01-01.webp">
+
+
+    <link href="assets/fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.3.0-web/css/all.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.3.0-web/css/regular.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style_sola_ouro/style.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/style_menu.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/style_slider.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/carousel_sobre_nos.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/noticias.css">
+    <link rel="stylesheet" href="css/style_sola_ouro/noticia_30_anos.css">
 
-
+    
 </head>
 <body>
-    
+
+    <header>
+
+        <!--nav bar-->
+
+        <div class="container-fluid containerheader">
+
+            <div class="container">
+
+                <div class="row navegacao_noticias">
+
+                    <!--nav logo-->
+                    <div class="col-lg-2 col-sm-2 col-xs-2">
+                        <a href="index.html" target="_self">
+                            <div class="logonav"></div>
+                        </a>
+                    </div>
+
+                    <!--nav links-->
+                    <div class="col-lg-7 col-sm-5 col-xs-5 linksnavegacao">
+                        <ul class="linksmenu">
+                            <li>
+                                <a class="linha" href="sobre_nos.html" target="_self">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="servicos.html" target="_self">Serviços</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="produtos.html" target="_self">Produtos</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="noticias.html" target="_self">Notícias</a>
+                            </li>
+                            <li>
+                                <a class="linha" href="contactos.html" target="_self">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--nav selector da lingua-->
 
 
-<!--MUDAR O TITLE DA NOTÍCIA - para o titulo do artigo-->
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle seletoridioma" type="button" id="dropdownMenu1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Idioma
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">PT</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+
+                    <!--nav barra de pesquisa-->
+
+
+                    <div class="barrapesquisa">
+                        <input type="text" class="form-control" placeholder="Search for:"><a href="#"><img
+                                src="img/icons/nav_lupa-01.svg" alt="Pesquisa"></a>
+                    </div>
+
+                    <!--nav hamburger-->
+
+                    <div class="hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="sobre_nos.html" target="_self">Sobre nós</a></li>
+                            <li><a class="menu__item" href="servicos.html" target="_self">Serviços</a></li>
+                            <li><a class="menu__item" href="produtos.html" target="_self">Produtos</a></li>
+                            <li><a class="menu__item" href="noticias.html" target="_self">Notícias</a></li>
+                            <li><a class="menu__item" href="contactos.html" target="_self">Contactos</a></li>
+                            <li>
+                                <div class="menu__item barrapesquisa-menu">
+                                    <input type="text" class="form-control" style="display: inline-block;"
+                                        placeholder="Search for:"><a href="#"><img src="img/icons/nav_lupa-01.svg"
+                                            alt="Pesquisa"></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="menu__item dropdown">
+                                    <button class="btn dropdown-toggle seletoridioma-menu" type="button"
+                                        id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="true">
+                                        Idioma
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu seletoridioma-dropdown-menu">
+                                        <li><a href="#">PT</a></li>
+                                        <li><a href="#">EN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid img30anos">
+            <div class="imagemnoticias">
+                <img src="img/noticias/logo_30anos.png" alt="noticia 30 anos">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="container main30anos">
+        <div class="row titulo30anos">
+            <div class="col-lg-6">
+                <h3 class="h3titulo">3 décadas de gestão dedicada</h3>
+            </div>
+        </div>
+
+        <div class="row data30anos">
+            <div class="col-lg-4">
+                <p class="ptexto"><b>27 Março, 2023</b></p>
+                <p>Por José Silva</p>
+            </div>
+        </div>
+
+        <div class="row txt-img-30anos">
+            <div class="col-lg-8 txt30anos">
+                <p class="ptexto">
+                    Foi em dezembro de 1993 que a empresa foi fundada com, apenas, 5 funcionários. 
+                    Dado o progressivo crescimento da empresa, mudou de instalações por duas vezes, 
+                    tendo em 2007 mudado para as atuais instalações. Ao longo destes 25 anos, destacou-se 
+                    no sector dos pré-fabricados e na transparência das suas relações com os seus clientes, 
+                    funcionários e fornecedores.
+                    <br>
+                    <br>
+                    <b>
+                        “Pretendo, para os próximos anos, continuar a investir no âmbito de uma melhor qualidade 
+                        e no design dos nossos produtos.”
+                    </b>
+                    <br>
+                    <br>
+                    José Silva
+                </p>
+
+            </div>
+
+            <div class="col-lg-4 col-sm-offset-1 imagem30anos"></div>
+
+        </div>
+
+        <div class="row botoes">
+            <div class="col-lg-offset-5 col-sm-offset-4 col-xs-offset-3">
+                <button class="btnverde"><a href="noticias.html">Voltar</a></button>
+                <button class="btnverde"><a href="noticias_ex1.html">Próxima</a></button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container compartilhe">
+        <div class="row compartilhetitle">
+            <h3 class="col-lg-12 h3titulo">Compartilhe</h3>
+        </div>
+
+        <div class="row socialmedia">
+            <div class="col-lg-6 col-sm-offset-3 col-xs-offset-1">
+                <a href="https://www.linkedin.com"><div id="linkedin"></div></a>
+                <a href="https://twitter.com/?lang=pt"><div id="twitter"></div></a>
+                <a href="https://slack.com/intl/pt-pt/"><div id="slack"></div></a>
+                <a href="https://pt-pt.facebook.com/"><div id="facebook"></div></a>
+                <a href="https://www.google.com/intl/pt-PT/gmail/about/"><div id="email"></div></a>
+
+            </div>
+
+        </div>
+
+        <div class="row proximasnoticias">
+            <div class="col-lg-4">
+                <div class="proxnoticia"><p class="ptexto"><b>Nova Identidade: <br> 30 anos Sola de Ouro</b></p></div>
+                
+                <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="proxnoticia2"><p class="ptexto"><b>Visita à feira: <br> Lineapelle</b></p></div>
+                
+                <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+
+            </div>
+
+            <div class="col-lg-4">
+                <div class="proxnoticia3"><p class="ptexto"><b>Visita à feira: <br> Futurmoda</b></p></div>
+                <button class="btnverde"><a href="noticias_ex1.html">Ler</a></button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
 
@@ -30,9 +241,51 @@
 
 
 
+<footer>
+    <div class="container-fluid fundofooter">
+        <div class="container footerconteudo">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-xs-12 listadecontactos">
+                    <ul class="contactos">
+                        <li class="footertelefone pfooter">
+                            <a href="callto:+351 256 866 034">+351 256 866 034</a>
+                        </li>
+
+                        <li class="footermail pfooter">
+                            <a href="mailto:geral@soladeouro.pt">geral@soladeouro.pt</a>
+                        </li>
+
+                        <li class="footermorada pfooter">
+                            Rua Monte Redondo, nº 205 –<br> Zona Industrial de Nogueira do Cravo<br> 3700-916
+                            Nogueira do Cravo
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 col-xs-12 ">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-xs-12">
+                            <img src="img/footer/Norte-2020.webp" alt="norte2020">
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-xs-2">
+                            <img src="img/footer/pme_execlencia_logo_editado.webp" alt="pme">
+                        </div>
+
+                        <div class="col-lg-2 col-lg-2 col-sm-2 col-xs-2">
+                            <img src="img/footer/pme_logo_editado.webp" alt="pme">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
 
+
+</footer>
 
     <!--no fim do boody temos de ter os jquaries, primeiro o jquery 3.6.3 e depois o do bootstrap-->
 
